@@ -46,7 +46,7 @@ That's it!
 
 Now, verify you installation. Open a new terminal session and execute ```otto``` command, you should get something similar to below image:
 
-![verify-image](https://github.com/rarora4/otto-getting-started/tree/master/images/image1.png)
+![verify image](https://github.com/rarora4/otto-getting-started/tree/master/images/image1.png)
 
 ## Develop
 
@@ -116,7 +116,7 @@ Otto will now take the AMI built in the previous step and launch a server in the
 ## See It Running
 After deployment, go to the IP of the instance and you will see the application running.
 
-![running-instance](https://github.com/rarora4/otto-getting-started/tree/master/images/image2.png)
+![running instance](https://github.com/rarora4/otto-getting-started/tree/master/images/image2.png)
 
 ## References
 
