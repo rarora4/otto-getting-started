@@ -1,3 +1,10 @@
+## Team
+
+* Kumar Utsav
+* Raman Preet Singh
+* Rohit Arora
+* Xavier Primus 
+
 ## Synopsys
 
 **_Otto_** is a developer's dream, it automatically builds a development environment tailored specifically for developer's application, with zero or minimal configuration. It knows how to develop and deploy any application on any cloud platform, all controlled with a single consistent workflow.
