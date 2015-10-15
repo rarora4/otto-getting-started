@@ -18,6 +18,6 @@ It detects the type of application you're developing and configures that develop
 
 ## References
 
- * [markdown-it](https://github.com/markdown-it/markdown-it) for Markdown parsing
+ * [Otto](https://ottoproject.io/docs/index.html) For getting to know Otto
 
 
