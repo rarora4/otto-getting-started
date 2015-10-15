@@ -61,7 +61,55 @@ $ otto dev ssh
 > bundle && rackup --host 0.0.0.0 
 ```
 
-The second commands executed in vagrant VM.
+The second commands executed in vagrant VM. Then, in another terminal run the below command to get the ip address at which application is running and open the ip address with port ```9292```  (the default listening port for this application).
+
+```
+$ otto dev address
+172.16.1.137
+```
+
+## Infrastructure
+
+To deploy an application, Otto has three steps: start an infrastructure, build the application, and launch the application. In this step we would deploy the application to AWS (make sure you have AWS account setup or [create new one](http://aws.amazon.com/free/)). Then start by executing following command:
+
+```
+otto infra
+```
+
+This step would first install Terraform, and then ask for AWS credentials post which Otto will go forward and build you an infrastructure. This will take a few minutes. 
+
+## See Where You Are
+
+Lets stop for a minute and check status of your infrastructure by running:
+
+```
+otto status
+```
+
+### Build
+
+The build step turns your application into a deployable unit, by deploying your application in the infrastructure we built in last step. So execute following command:
+
+```
+otto build
+```
+
+Again you can check the status using ```otto status```. See how simple it is!
+
+## Finally Let's Deploy
+
+After launching infrastructure, and building application, its time to deploy it. Execute the command (wanna guess...):
+
+```
+otto deploy
+```
+
+Otto will now take the AMI built in the previous step and launch a server in the infrastructure built previously. Otto will configure firewalls properly to secure the server if necessary.
+
+## See It Running
+After deployment, go to the IP of the instance and you will see the application running.
+
+![running-instance](https://github.com/rarora4/otto-getting-started/tree/master/images/image2.png)
 
 ## References
 
