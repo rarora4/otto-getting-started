@@ -118,6 +118,28 @@ After deployment, go to the IP of the instance and you will see the application 
 
 ![running instance](/images/image2.png)
 
+## Last Important Thing - Appfile
+
+Hashicorp created a new configuration format for Otto that is expressive enough to solve all the mentioned shortcomings of Vagrant: the Appfile. It is a higher-level description focusing on the application. A complete example is shown below:
+
+```
+application {
+  name = "otto-getting-started"
+  type = "ruby"
+}
+
+project {
+  name = "otto-getting-started"
+  infrastructure = "otto-getting-started"
+}
+
+infrastructure "otto-getting-started" {
+  type = "aws"
+  flavor = "simple"
+}
+```
+The Appfile is meant to describe everything required to develop and deploy an application. Otto with zero configuration only does the bare minimum possible for every application type, and is heavily opinionated. Writing an Appfile allows you to be explicit in how you want Otto to behave.
+
 ## References
 
  * [Otto](https://ottoproject.io/docs/index.html) For getting to know Otto
