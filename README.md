@@ -142,7 +142,7 @@ The Appfile is meant to describe everything required to develop and deploy an ap
 
 ## Demo 
 
-[![Otto Screencast]()](https://youtu.be/X4Er8EZoUN0)
+[Otto Screencast](https://youtu.be/X4Er8EZoUN0)
 
 ## References
 
