@@ -140,6 +140,10 @@ infrastructure "otto-getting-started" {
 ```
 The Appfile is meant to describe everything required to develop and deploy an application. Otto with zero configuration only does the bare minimum possible for every application type, and is heavily opinionated. Writing an Appfile allows you to be explicit in how you want Otto to behave.
 
+## Demo 
+
+[![Otto Screencast]()](https://youtu.be/X4Er8EZoUN0)
+
 ## References
 
  * [Otto](https://ottoproject.io/docs/index.html) For getting to know Otto
